@@ -20,7 +20,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Upload all website folders
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: |
             architecture
@@ -38,4 +38,4 @@ jobs:
             real-estate
 
       - name: Deploy all sites
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
