@@ -16,8 +16,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
+      - name: Configure GitHub Pages (optional)
+        if: ${{ secrets.PAGES_PAT != '' }}
         uses: actions/configure-pages@v4
+        with:
+          token: ${{ secrets.PAGES_PAT }}
+          enablement: 'true'
 
       - name: Upload all website folders
         uses: actions/upload-pages-artifact@v4

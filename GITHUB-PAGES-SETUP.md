@@ -26,6 +26,12 @@ Example URLs:
 
 To add another website later, create a new folder, place `index.html` and assets inside it, and push to `main`.
 
+## Automatic Pages enablement
+
+If you want the workflow to enable GitHub Pages automatically in a new repository, add a repository secret named `PAGES_PAT` with a personal access token that has `repo` scope and `pages:write` permission. The workflow will use this token to enable Pages before deployment.
+
+If you do not provide `PAGES_PAT`, the workflow will skip automatic enablement. In that case, enable GitHub Pages manually in repository settings and select GitHub Actions as the source.
+
 ## Notes
 
 - The workflow runs on `push` to `main`.
