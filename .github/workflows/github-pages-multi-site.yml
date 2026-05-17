@@ -27,19 +27,19 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: |
-            architecture
-            beauty-salon
-            business-consultant
-            ca-firm
-            dental-clinic
-            education-institute
-            fitness-gym
-            interior-design
-            law-firm
-            life-coach
-            medical-clinic
-            premium-restaurant
-            real-estate
+            websites/architecture
+            websites/beauty-salon
+            websites/business-consultant
+            websites/ca-firm
+            websites/dental-clinic
+            websites/education-institute
+            websites/fitness-gym
+            websites/interior-design
+            websites/law-firm
+            websites/life-coach
+            websites/medical-clinic
+            websites/premium-restaurant
+            websites/real-estate
 
       - name: Deploy all sites
         uses: actions/deploy-pages@v4
